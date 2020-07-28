@@ -1,0 +1,97 @@
+body {
+	background-color: royalblue;
+	color: #fff;
+	font-family: sans-serif;
+}
+
+.title {
+	text-align: center;
+}
+.container {
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.form {
+	display: grid;
+	grid-template-columns: 90% 10%;
+	grid-template-rows: repeat(2, 50px);
+	gap: 10px;
+}
+.form .form__text {
+	grid-column: 1 /2;
+}
+.form .button {
+	grid-column: 2 /3;
+	grid-row: 1 /3;
+	width: 50px;
+}
+
+.form .form__row {
+	grid-column: 1 / 2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.form .form__text,
+.form .form__date {
+	height: 35px;
+	border: 2px solid black;
+	outline: none;
+}
+.form .form__date {
+	width: 260px;
+}
+
+.form .form__radio {
+	display: none;
+}
+
+.form .form__radio:checked + label {
+	border-color: white;
+}
+.form .form__label {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	border: 2px solid black;
+	outline: none;
+}
+
+.coral {
+	background-color: coral;
+}
+.crimson {
+	background-color: crimson;
+}
+.darkcyan {
+	background-color: darkcyan;
+}
+
+.text {
+	margin-top: 10px;
+}
+.text__tasks {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+	color: white;
+	border: 2px solid white;
+	outline: none;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.countdown {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 120px;
+	text-align: center;
+}
+.text__tasks p:first-child {
+	width: 400px;
+}
+.countdown span {
+	width: 30px;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>TODO LIST</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1 class="title">Práctica - Todo List</h1>
+		<div class="container">
+			<form action="#" id="form" name="form" class="form">
+				<input type="text" name="task" id="task" class="form__text" placeholder="type a task" />
+				<button id="button" class="button"><i class="fas fa-pen"></i></button>
+				<div class="form__row">
+					<input id="coral" type="radio" name="color" value="coral" class="form__radio" />
+					<label for="coral" class="coral form__label"></label>
+					<input type="radio" id="crimson" name="color" value="crimson" class="form__radio" />
+					<label for="crimson" class="crimson form__label"></label>
+					<input type="radio" id="darkcyan" name="color" value="darkcyan" class="form__radio" />
+					<label for="darkcyan" class="darkcyan form__label"></label>
+					<input type="datetime-local" name="date" id="date" class="form__date" />
+				</div>
+			</form>
+			<!-- FINAL DEL FORM -->
+			<div class="error" id="error"></div>
+			<div class="text" id="text"></div>
+		</div>
+		<!-- FINAL DEL CONTAINER-->
+
+		<script src="script.js"></script>
+	</body>
+</html>
